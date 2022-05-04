@@ -9,3 +9,5 @@ const primes = (num) => {
   );
   return arr;
 };
+
+console.log(primes(10))
