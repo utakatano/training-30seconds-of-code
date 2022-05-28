@@ -9,3 +9,8 @@ const isDuplexStream = val =>
   typeof val._write === 'function' &&
   typeof val._writableState === 'object'
 
+const Stream = require('stream')
+const duplex = new Stream.Duplex()
+
+console.log(duplex)
+console.log(isDuplexStream(duplex))
